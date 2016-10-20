@@ -27,7 +27,7 @@ public class App {
 			case 1 : app.testNumbers(); break;
 			case 2 : app.testICsVis(); break;
 			case 3 : app.testICsAur(); break;
-			default : System.out.println("WTF? " + rand);
+			default : System.out.println("Not found: " + rand);
 			}
 			//			app.testICsAur();
 		}
