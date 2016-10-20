@@ -7,8 +7,8 @@ import org.jfugue.player.Player;
 
 public class App {
 
-	private String[] names = new String[] {"c", "c#", "db", "d", "d#", "eb", "e", "f", "f#", "gb", "g", "g#","ab", "a","a#","bb", "b"};
-	private int[] numbers = new int[] {     0,    1,    1,   2,    3,    3,   4,   5,   6,    6,    7,   8,    8,   9,  10,  10,   11};
+	private static final String[] names = new String[] {"c", "c#", "db", "d", "d#", "eb", "e", "f", "f#", "gb", "g", "g#","ab", "a","a#","bb", "b"};
+	private static final int[] numbers = new int[] {     0,    1,    1,   2,    3,    3,   4,   5,   6,    6,    7,   8,    8,   9,  10,  10,   11};
 
 	private static final Random r = new Random();
 	private final Scanner in = new Scanner(System.in);
@@ -45,8 +45,7 @@ public class App {
 			Pattern p1 = new Pattern((numbers[a] + 60) + "w").setVoice(0);
 			Pattern p2 = new Pattern((numbers[b] + 60) + "w").setVoice(1);
 			player.play(p1, p2);
-		}
-				);
+		});
 	}
 	private void testICs(BiConsumer<Integer, Integer> ico) {
 		int pc1 = r.nextInt(16 +1);
