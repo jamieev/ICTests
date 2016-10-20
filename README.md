@@ -10,3 +10,4 @@ Quick and dirty app for Interval Class training
 
 NB All aural tests will be smaller than an octave and between c4 and b4
 
+Currently, enharmonic pitch class names have been limited to : c, c#, db, d, d#, eb, e, f, f#, gb, g, g#, ab, a, a#, bb and  b.
